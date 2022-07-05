@@ -1,0 +1,63 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "1656992553cc301c12": {
+      "type": "taster-product-card",
+      "settings": {
+        "card_title": "",
+        "card_text": "<p><strong>🔸如何收到第一手團購資訊?<\/strong><\/p><p>1.加入「<a href=\"https:\/\/www.facebook.com\/groups\/1422637727923039\"><strong>美食加的口袋名單<\/strong><\/a>」官方社團<br\/>2.加入社團後，點選管理通知，選取所有貼文與推播通知，即可獲得團購第一手資訊囉！<\/p>",
+        "show_divider": true
+      }
+    },
+    "1656992590a794989e": {
+      "type": "taster-product-card",
+      "blocks": {
+        "074007c0-63ff-4c38-9403-7015a42082af": {
+          "type": "product_card",
+          "settings": {
+            "product": "和牛研究室-經典暢銷含運組_0629"
+          }
+        }
+      },
+      "block_order": [
+        "074007c0-63ff-4c38-9403-7015a42082af"
+      ],
+      "settings": {
+        "card_title": "",
+        "card_text": "<p><strong>6\/29 ( 三 )團購｜ 和牛研究室<\/strong> <strong>👉<\/strong><\/p><p><strong>🔸團購時間：6\/29 ( 三 ) –7\/6 ( 三 ) 13:30<\/strong><\/p><p><strong>\/ 組合方案 \/<\/strong><\/p><p>▪️肉食系經典和牛組<br\/>法式牛肉澄清湯 600g+紅酒燉近江牛 300g<br\/>▪️清爽系和牛調理組<br\/>匈牙利蔬菜牛肉湯 600g+和牛日式燴飯醬汁 300g<br\/>▪️千成亭和牛風味湯料理包組<br\/>匈牙利蔬菜牛肉湯 600g+法式牛肉澄清湯 600g+馬告風味牛白湯 600g<br\/>▪️千成亭和牛飯醬調理包組<br\/>和牛日式燴飯醬汁 300g+和牛瑪莎拉咖哩 300g+紅酒燉近江牛 300g<\/p><p><strong>\/ 組合加購專區 \/<\/strong><\/p><p>▪️和牛牛肉湯系列<br\/>匈牙利蔬菜牛肉湯／法式牛肉澄清湯／馬告風味牛白湯<br\/>▪️和牛料理包系列<br\/>和牛日式燴飯醬汁／和牛瑪莎拉咖哩／紅酒燉近江牛<br\/>▪️【限量】A5頂級近江牛 翼板牛排（250g±10）<br\/>▪️【限量】A5頂級近江牛 翼板牛排（215g±20）<br\/>▪️【限量】A5頂級近江牛 肩胛捲心牛排（240g±10）<br\/>▪️【限量】A5頂級近江牛 牛小排（225g±20）<\/p>",
+        "show_divider": true
+      }
+    },
+    "1656992662686e5df3": {
+      "type": "taster-product-card",
+      "blocks": {
+        "1d91a2a0-3f1a-42c6-a58d-af6721664ba2": {
+          "type": "product_card",
+          "settings": {
+            "product": "和牛研究室_限量單品自由選_0629"
+          }
+        }
+      },
+      "block_order": [
+        "1d91a2a0-3f1a-42c6-a58d-af6721664ba2"
+      ],
+      "settings": {
+        "card_title": "",
+        "card_text": "<p><strong>\/ 限量單品方案 \/<\/strong><\/p><p>▪️和牛牛肉湯系列<br\/>匈牙利蔬菜牛肉湯／法式牛肉澄清湯／馬告風味牛白湯<br\/>▪️和牛料理包系列<br\/>和牛日式燴飯醬汁／和牛瑪莎拉咖哩／紅酒燉近江牛<\/p>",
+        "show_divider": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1656992553cc301c12",
+    "1656992590a794989e",
+    "1656992662686e5df3"
+  ]
+}
