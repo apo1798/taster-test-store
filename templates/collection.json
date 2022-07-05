@@ -1,23 +1,5 @@
 {
   "sections": {
-    "165699427465341c79": {
-      "type": "taster-carousel",
-      "blocks": {
-        "925b7f05-c0f6-4f57-9f9f-1204e44e56a7": {
-          "type": "image_carousel",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/gubami-BN-02-scaled.jpg",
-            "url": ""
-          }
-        }
-      },
-      "block_order": [
-        "925b7f05-c0f6-4f57-9f9f-1204e44e56a7"
-      ],
-      "settings": {
-        "carousel-interval": 5
-      }
-    },
     "banner": {
       "type": "main-collection-banner",
       "settings": {
@@ -46,7 +28,6 @@
     }
   },
   "order": [
-    "165699427465341c79",
     "banner",
     "product-grid"
   ]
