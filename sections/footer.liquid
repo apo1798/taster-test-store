@@ -57,6 +57,50 @@
               {%- endif -%}
 
               {%- case block.type -%}
+
+                {% when "taster_social_link_text" %}
+                  <div>
+                    <h2 class="footer-block__heading">{{ block.settings.link_text_title }}</h2>
+                    <ul style="list-style: none; padding: 0">
+                      {% if settings.social_facebook_link != blank and block.settings.facebook_link_text != blank %}
+                        <li class="list-social__item">
+                          <a href="{{ settings.social_facebook_link }}" class="link list-social__link" style="
+                            display: inline-block;
+                            padding: 0.8rem 0;
+                        ">
+                            {%- render 'icon-facebook' -%}
+                            <span class="visually-hidden">{{ 'general.social.links.facebook' | t }}</span>
+                            <span>{{ block.settings.facebook_link_text }}</span>
+                          </a>
+                        </li>
+                      {% endif %}
+                      {% if settings.social_instagram_link != blank and block.settings.instagram_link_text != blank %}
+                        <li class="list-social__item">
+                          <a href="{{ settings.social_instagram_link }}" class="link list-social__link" style="
+                            display: inline-block;
+                            padding: 0.8rem 0;
+                        ">
+                            {%- render 'icon-instagram' -%}
+                            <span class="visually-hidden">{{ 'general.social.links.instagram' | t }}</span>
+                            <span>{{ block.settings.instagram_link_text }}</span>
+                          </a>
+                        </li>
+                      {% endif %}
+                      {% if settings.social_youtube_link != blank and block.settings.youtube_link_text != blank %}
+                        <li class="list-social__item">
+                          <a href="{{ settings.social_youtube_link }}" class="link list-social__link" style="
+                            display: inline-block;
+                            padding: 0.8rem 0;
+                        ">
+                            {%- render 'icon-youtube' -%}
+                            <span class="visually-hidden">{{ 'general.social.links.youtube' | t }}</span>
+                            <span>{{ block.settings.youtube_link_text }}</span>
+                          </a>
+                        </li>
+                      {% endif %}
+                    </ul>
+                  </div>
+
                 {%- when 'text' -%}
                   <div class="footer-block__details-content rte">
                     {{ block.settings.subtext }}
@@ -469,6 +513,36 @@
             }
           ],
           "default": "center"
+        }
+      ]
+    },
+    {
+      "type": "taster_social_link_text",
+      "name": "#臉書、IG、YT連結說明",
+      "settings": [
+        {
+          "type": "text",
+          "id": "link_text_title",
+          "label": "標題",
+          "info": "記得在設定當上連結、以下描述說明未輸入則不顯示"
+        },
+        {
+          "type": "text",
+          "id": "facebook_link_text",
+          "label": "Facebook連結補充說明",
+          "default": "Facebook粉絲專頁連結"
+        },
+        {
+          "type": "text",
+          "id": "instagram_link_text",
+          "label": "Instagram連結補充說明",
+          "default": "Instagram粉絲專頁連結"
+        },
+        {
+          "type": "text",
+          "id": "youtube_link_text",
+          "label": "YouTube連結補充說明",
+          "default": "YouTube粉絲專頁連結"
         }
       ]
     }

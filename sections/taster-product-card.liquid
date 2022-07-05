@@ -1,0 +1,114 @@
+{{ 'taster-product-card.css' | asset_url | stylesheet_tag }}
+
+{% if section.blocks %}
+  <div class='product-card-section page-width'>
+    <div>
+      <h3>{{ section.settings.card_title }}</h3>
+      <p class='custom-color'>{{ section.settings.card_text }}</p>
+    </div>
+
+    <ul class='
+        product-card-container
+        {% if section.settings.show_divider %}
+            product-card-divider
+         {% endif %}
+      '>
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'product_card' %}
+            {% unless block.settings.product == blank %}
+              {% assign image = block.settings.product.images[0] %}
+              <li class='product-card'>
+                <div class='product-image-container'>
+                  <a
+                    href='{{ block.settings.product.url }}'
+                    target='_blank'
+                    rel='noopenner noreferrer'
+                  >
+                    <img
+                      srcset='
+                        {%- if image.width >= 165 -%}{{ image | image_url: width: 165 }} 165w,{%- endif -%}
+                        {%- if image.width >= 360 -%}{{ image | image_url: width: 360 }} 360w,{%- endif -%}
+                        {%- if image.width >= 533 -%}{{ image | image_url: width: 533 }} 533w,{%- endif -%}
+                        {%- if image.width >= 720 -%}{{ image | image_url: width: 720 }} 720w,{%- endif -%}
+                        {%- if image.width >= 940 -%}{{ image | image_url: width: 940 }} 940w,{%- endif -%}
+                        {%- if image.width >= 1066 -%}{{ image | image_url: width: 1066 }} 1066w,{%- endif -%}
+                        {{ image | image_url }} {{ image.width }}w
+                      '
+                      src='{{ image.src | image_url: width: 165 }}'
+                      loading='lazy'
+                      alt='{{ image.alt | escape }}'
+                      width='{{ image.width }}'
+                      height='{{ image.width | divided_by: image.aspect_ratio | round }}'
+                    >
+                    <div class='product-choose'>選擇品項</div>
+                  </a>
+                </div>
+
+                <div>
+                  <a
+                    href='{{ block.settings.product.url }}'
+                    target='_blank'
+                    rel='noopenner noreferrer'
+                  >
+                    <h4>{{ block.settings.product.title }}</h4>
+                    <h4 class='product-price'>
+                      {{ block.settings.product.price | money_without_trailing_zeros }}
+                    </h4>
+                  </a>
+                </div>
+              </li>
+            {% endunless %}
+        {% endcase %}
+      {% endfor %}
+    </ul>
+  </div>
+{% endif %}
+
+{% comment %} <p class='custom-color'>Its color can be controlled by the color picker.</p> {% endcomment %}
+
+{% schema %}
+{
+  "name": "#商品卡片",
+  "tag": "section",
+  "settings": [
+    {
+      "id": "card_title",
+      "type": "text",
+      "label": "商品卡片標題",
+      "default": "這是一組商品卡片區段",
+      "info": "加上區段標題"
+    },
+    {
+      "id": "card_text",
+      "type": "richtext",
+      "label": "區段內容",
+      "info": "加上區段內容"
+    },
+    {
+      "id": "show_divider",
+      "type": "checkbox",
+      "label": "加上底部分隔線",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "name": "商品卡片",
+      "type": "product_card",
+      "settings": [
+        {
+          "id": "product",
+          "type": "product",
+          "label": "選擇商品"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "#商品卡片"
+    }
+  ]
+}
+{% endschema %}

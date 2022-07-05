@@ -1,0 +1,121 @@
+$product-title-color: #aba098;
+$product-price-color: #77a464;
+$product-hover-color: rgba(255, 255, 255);
+$product-hover-bg: rgba(0, 0, 0, 0.7);
+
+$product-bg-color: #999;
+
+$divider-style: 1px solid rgba(0, 0, 0, 0.1);
+
+.product-card-section {
+  margin: 5rem auto;
+  // background-color: rgb(223, 238, 242);
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    margin: 0;
+    padding-top: 0.4rem;
+    font-size: 1.6rem;
+    color: $product-title-color;
+  }
+
+  ul,
+  li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .product-card-container {
+    .product-choose {
+      position: relative;
+      width: 100%;
+      height: 3.5rem;
+      margin-top: -3.5rem;
+      font-size: 1.6rem;
+      color: $product-hover-color;
+      padding: 0.5rem 0;
+      background-color: $product-hover-bg;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 300ms ease-in-out;
+    }
+
+    .product-card {
+      color: $product-title-color;
+      font-weight: bold;
+      margin: 1rem 1.5rem;
+
+      .product-image-container {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+
+        &::before {
+          content: '';
+          display: block;
+          margin-top: 100%;
+          background-color: $product-bg-color;
+        }
+
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: block;
+          object-fit: cover;
+
+          transition: all 400ms ease;
+        }
+      }
+    }
+
+    li:hover {
+      .product-choose {
+        opacity: 1;
+      }
+
+      .product-image-container img {
+        transform: scale(1.01);
+      }
+    }
+  }
+
+  .product-price {
+    color: $product-price-color;
+    font-weight: bold;
+  }
+
+  .product-card-divider {
+    border-bottom: $divider-style;
+  }
+}
+
+@media (min-width: 560px) {
+  .product-card-section {
+    .product-card-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (min-width: 860px) {
+  .product-card-section {
+    .product-card-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}

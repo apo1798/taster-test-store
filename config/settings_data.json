@@ -15,7 +15,7 @@
     "heading_scale": 100,
     "type_body_font": "assistant_n4",
     "body_scale": 100,
-    "page_width": 1200,
+    "page_width": 1300,
     "spacing_sections": 0,
     "spacing_grid_horizontal": 8,
     "spacing_grid_vertical": 8,
@@ -84,13 +84,13 @@
     "sold_out_badge_color_scheme": "inverse",
     "accent_icons": "text",
     "social_twitter_link": "",
-    "social_facebook_link": "",
+    "social_facebook_link": "https:\/\/zh-tw.facebook.com\/tasterlovesfood\/",
     "social_pinterest_link": "",
-    "social_instagram_link": "",
+    "social_instagram_link": "https:\/\/www.instagram.com\/taster__selection\/",
     "social_tiktok_link": "",
     "social_tumblr_link": "",
     "social_snapchat_link": "",
-    "social_youtube_link": "",
+    "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UCGp4GSBwWL7PXpXfRkCuo3g",
     "social_vimeo_link": "",
     "predictive_search_enabled": true,
     "predictive_search_show_vendor": false,
@@ -118,44 +118,50 @@
       "header": {
         "type": "header",
         "settings": {
-          "color_scheme": "background-1",
-          "logo_width": 90,
+          "color_scheme": "background-2",
+          "logo": "shopify:\/\/shop_images\/logox280_1.png",
+          "logo_width": 130,
           "logo_position": "middle-left",
           "menu": "main-menu",
+          "menu_type_desktop": "dropdown",
           "show_line_separator": true,
           "enable_sticky_header": true,
-          "margin_bottom": 0
+          "margin_bottom": 0,
+          "padding_top": 0,
+          "padding_bottom": 4
         }
       },
       "footer": {
         "type": "footer",
         "blocks": {
-          "footer-0": {
-            "type": "link_list",
-            "settings": {
-              "heading": "Quick links",
-              "menu": "footer"
-            }
-          },
-          "footer-1": {
-            "type": "link_list",
-            "settings": {
-              "heading": "Info",
-              "menu": "footer"
-            }
-          },
           "footer-2": {
             "type": "text",
             "settings": {
-              "heading": "Our mission",
-              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+              "heading": "聯絡我們",
+              "subtext": "<p>時間 \/ 週一至週五 10:00-17:00<\/p><p>客服信箱 \/ <a href=\"mailto:service@taster.life\">service@taster.life<\/a><\/p><p>電話 \/ 02-23660699 #0002<\/p>"
+            }
+          },
+          "footer-0": {
+            "type": "link_list",
+            "settings": {
+              "heading": "顧客服務",
+              "menu": "footer"
+            }
+          },
+          "56d63890-6f07-4914-bb5b-028411761f0f": {
+            "type": "taster_social_link_text",
+            "settings": {
+              "link_text_title": "追蹤我們",
+              "facebook_link_text": "追蹤美食加口袋名單社團",
+              "instagram_link_text": "追蹤最新美食動態",
+              "youtube_link_text": "Taster美食加YouTube頻道"
             }
           }
         },
         "block_order": [
+          "footer-2",
           "footer-0",
-          "footer-1",
-          "footer-2"
+          "56d63890-6f07-4914-bb5b-028411761f0f"
         ],
         "settings": {
           "color_scheme": "background-1",
@@ -183,7 +189,10 @@
           "color_scheme": "background-1"
         }
       }
-    }
+    },
+    "content_for_index": [
+
+    ]
   },
   "presets": {
     "Default": {

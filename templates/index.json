@@ -1,7 +1,66 @@
 {
   "sections": {
+    "1656984756154bc601": {
+      "type": "taster-carousel",
+      "blocks": {
+        "f8066e22-489a-4ee5-9d13-d17fb903773b": {
+          "type": "image_carousel",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/0623-BN-02-scaled.jpg",
+            "url": ""
+          }
+        },
+        "d7074dea-5d69-4b8a-b289-795642948135": {
+          "type": "image_carousel",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/0527BN__-1-scaled.jpg",
+            "url": ""
+          }
+        },
+        "f7c32e4f-be90-4e33-863c-349dd061329b": {
+          "type": "image_carousel",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/scaled.jpg",
+            "url": ""
+          }
+        },
+        "b05b04c1-2919-45fe-a8d2-2928e03966fc": {
+          "type": "image_carousel",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Caviar-HousePrunier_Banner-scaled.jpg",
+            "url": ""
+          }
+        },
+        "60419c71-1f94-4cb0-aa02-e7668df7a14d": {
+          "type": "image_carousel",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Liz_-4-scaled.jpg",
+            "url": ""
+          }
+        },
+        "bfe7c184-3309-4625-8aab-81998cb7189f": {
+          "type": "image_carousel",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/home_s5.jpg",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "f8066e22-489a-4ee5-9d13-d17fb903773b",
+        "d7074dea-5d69-4b8a-b289-795642948135",
+        "f7c32e4f-be90-4e33-863c-349dd061329b",
+        "b05b04c1-2919-45fe-a8d2-2928e03966fc",
+        "60419c71-1f94-4cb0-aa02-e7668df7a14d",
+        "bfe7c184-3309-4625-8aab-81998cb7189f"
+      ],
+      "settings": {
+        "carousel-interval": 5
+      }
+    },
     "image_banner": {
       "type": "image-banner",
+      "disabled": true,
       "blocks": {
         "heading": {
           "type": "heading",
@@ -49,6 +108,7 @@
     },
     "rich_text": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "heading": {
           "type": "heading",
@@ -69,6 +129,8 @@
         "text"
       ],
       "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
         "color_scheme": "background-1",
         "full_width": true,
         "padding_top": 40,
@@ -77,18 +139,26 @@
     },
     "featured_collection": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured products",
         "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
         "collection": "all",
         "products_to_show": 8,
         "columns_desktop": 4,
+        "full_width": false,
         "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
         "color_scheme": "background-1",
         "image_ratio": "adapt",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
+        "enable_quick_add": false,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 28,
@@ -97,6 +167,7 @@
     },
     "collage": {
       "type": "collage",
+      "disabled": true,
       "blocks": {
         "collection-0": {
           "type": "collection",
@@ -135,6 +206,7 @@
     },
     "video": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "h1",
@@ -152,27 +224,40 @@
         "column1": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
+            "image": "shopify:\/\/shop_images\/2048x1366.png",
+            "title": "",
+            "text": "<p>看看大家都買了什麼？ 最夯的人氣商品都在這！<\/p>",
+            "link_label": "來去逛逛",
             "link": ""
           }
         },
         "column2": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
+            "image": "shopify:\/\/shop_images\/banner-2-2048x1366.png",
+            "title": "",
+            "text": "<p>限時一週販售的預購商品，想吃美食下手要快！<\/p>",
+            "link_label": "立刻訂購",
             "link": ""
           }
         },
         "column3": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
+            "image": "shopify:\/\/shop_images\/2048x1366_2ced6376-f16f-4c84-ac64-54ae84654f90.png",
+            "title": "",
+            "text": "<p>精選中、西早午餐選擇，開啟一天的美味序曲！<\/p>",
+            "link_label": "早餐到你家",
+            "link": ""
+          }
+        },
+        "5c9862b9-7468-4914-b6c1-3e6db979de9b": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banner__-1-_-16-2048x1366.png",
+            "title": "",
+            "text": "<p>跟著美食加選物一同享受夏日家常煮義 GO！<\/p>",
+            "link_label": "夏季美食季",
             "link": ""
           }
         }
@@ -180,14 +265,15 @@
       "block_order": [
         "column1",
         "column2",
-        "column3"
+        "column3",
+        "5c9862b9-7468-4914-b6c1-3e6db979de9b"
       ],
       "settings": {
         "title": "",
         "heading_size": "h1",
-        "image_width": "third",
+        "image_width": "full",
         "image_ratio": "adapt",
-        "columns_desktop": 3,
+        "columns_desktop": 2,
         "column_alignment": "center",
         "background_style": "none",
         "button_label": "",
@@ -201,6 +287,7 @@
     }
   },
   "order": [
+    "1656984756154bc601",
     "image_banner",
     "rich_text",
     "featured_collection",
