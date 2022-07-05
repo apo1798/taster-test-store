@@ -58,6 +58,73 @@
         "carousel-interval": 5
       }
     },
+    "multicolumn": {
+      "type": "multicolumn",
+      "blocks": {
+        "column1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2048x1366.png",
+            "title": "",
+            "text": "<p>看看大家都買了什麼？ 最夯的人氣商品都在這！<\/p>",
+            "link_label": "來去逛逛",
+            "link": "shopify:\/\/blogs\/美食加故事"
+          }
+        },
+        "column2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banner-2-2048x1366.png",
+            "title": "",
+            "text": "<p>限時一週販售的預購商品，想吃美食下手要快！<\/p>",
+            "link_label": "立刻訂購",
+            "link": "shopify:\/\/blogs\/美食加故事\/品牌故事"
+          }
+        },
+        "column3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2048x1366_2ced6376-f16f-4c84-ac64-54ae84654f90.png",
+            "title": "",
+            "text": "<p>精選中、西早午餐選擇，開啟一天的美味序曲！<\/p>",
+            "link_label": "早餐到你家",
+            "link": "shopify:\/\/blogs\/美食加故事\/品牌故事"
+          }
+        },
+        "5c9862b9-7468-4914-b6c1-3e6db979de9b": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banner__-1-_-16-2048x1366.png",
+            "title": "",
+            "text": "<p>跟著美食加選物一同享受夏日家常煮義 GO！<\/p>",
+            "link_label": "夏季美食季",
+            "link": "shopify:\/\/blogs\/美食加故事\/品牌故事"
+          }
+        }
+      },
+      "block_order": [
+        "column1",
+        "column2",
+        "column3",
+        "5c9862b9-7468-4914-b6c1-3e6db979de9b"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "disabled": true,
@@ -217,82 +284,15 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "multicolumn": {
-      "type": "multicolumn",
-      "blocks": {
-        "column1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/2048x1366.png",
-            "title": "",
-            "text": "<p>看看大家都買了什麼？ 最夯的人氣商品都在這！<\/p>",
-            "link_label": "來去逛逛",
-            "link": ""
-          }
-        },
-        "column2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/banner-2-2048x1366.png",
-            "title": "",
-            "text": "<p>限時一週販售的預購商品，想吃美食下手要快！<\/p>",
-            "link_label": "立刻訂購",
-            "link": ""
-          }
-        },
-        "column3": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/2048x1366_2ced6376-f16f-4c84-ac64-54ae84654f90.png",
-            "title": "",
-            "text": "<p>精選中、西早午餐選擇，開啟一天的美味序曲！<\/p>",
-            "link_label": "早餐到你家",
-            "link": ""
-          }
-        },
-        "5c9862b9-7468-4914-b6c1-3e6db979de9b": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/banner__-1-_-16-2048x1366.png",
-            "title": "",
-            "text": "<p>跟著美食加選物一同享受夏日家常煮義 GO！<\/p>",
-            "link_label": "夏季美食季",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3",
-        "5c9862b9-7468-4914-b6c1-3e6db979de9b"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 2,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "1656984756154bc601",
+    "multicolumn",
     "image_banner",
     "rich_text",
     "featured_collection",
     "collage",
-    "video",
-    "multicolumn"
+    "video"
   ]
 }
