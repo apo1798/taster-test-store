@@ -90,6 +90,11 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "d75c282f-a761-43f9-9776-e9c37cd4ebaf": {
+          "type": "shopify:\/\/apps\/growave-loyalty-wishlist-3\/blocks\/block.product.faveButton\/b3d2efbe-110a-4e27-84a8-1f2ed63996a4",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -100,6 +105,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "d75c282f-a761-43f9-9776-e9c37cd4ebaf",
         "description",
         "collapsible-row-0",
         "collapsible-row-1",
