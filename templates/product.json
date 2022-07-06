@@ -211,12 +211,29 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "2878362c54a5a3d163": {
+      "type": "apps",
+      "blocks": {
+        "e00d6505-3ddb-4e98-8c74-43c7812cc455": {
+          "type": "shopify:\/\/apps\/growave-loyalty-wishlist-3\/blocks\/block.product.reviewWidget\/b3d2efbe-110a-4e27-84a8-1f2ed63996a4",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "e00d6505-3ddb-4e98-8c74-43c7812cc455"
+      ],
+      "settings": {
+        "include_margins": false
+      }
     }
   },
   "order": [
     "main",
     "image-with-text",
     "multicolumn",
-    "product-recommendations"
+    "product-recommendations",
+    "2878362c54a5a3d163"
   ]
 }
