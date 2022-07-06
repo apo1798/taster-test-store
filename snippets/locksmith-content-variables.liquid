@@ -3,7 +3,7 @@
   fiddle with what's below, but your changes will be reset the next time that
   Locksmith interacts with your shop.
 
-  Last updated: Wed, 06 Jul 2022 07:22:19 +0000
+  Last updated: Wed, 06 Jul 2022 07:26:28 +0000
   Integration version: v6.29
 {% endcomment -%}
 
@@ -232,7 +232,7 @@
             inputNodes[i].value = redirectUrl;
           }
         </script>{%endif%}{%endcapture%}{%assign customer_login_form=locksmith_customer_login_form%}{%assign customer_register_form=locksmith_customer_register_form%}{%unless _lock_guest_content%}{%capture locksmith_guest_content%}{%if _lock_guest_content != blank%}{{_lock_guest_content}}{%else%}<p><strong>This content is protected</strong> - please log in with your customer account to continue.</p>
-{{customer_login_form}}{%endif%}{%endcapture%}{%endunless%}{%if locksmith_access_denied_content == blank%}{%capture locksmith_access_denied_content%}{%if _t%}{%if _lock_access_denied_content != blank%}{{_lock_access_denied_content}}{%else%}<p style='text-align: center;'>這個頁面為美食加常客頁面<strong>加入美食加常客一起團購更多美食吧！</strong></p>{%endif%}{%if locksmith_manual_lock%}<p><a href="#" onclick="window.parent.__locksmith_hide_frame(); return false;">&lsaquo; Back</a></p>{%endif%}{%elsif locksmith_requires_customer%}{{locksmith_guest_content}}{%else%}{%if _lock_access_denied_content != blank%}{{_lock_access_denied_content}}{%else%}<p style='text-align: center;'>這個頁面為美食加常客頁面<strong>加入美食加常客一起團購更多美食吧！</strong></p>{%endif%}{%endif%}{%if _p.name contains "Debut"%}<style>
+{{customer_login_form}}{%endif%}{%endcapture%}{%endunless%}{%if locksmith_access_denied_content == blank%}{%capture locksmith_access_denied_content%}{%if _t%}{%if _lock_access_denied_content != blank%}{{_lock_access_denied_content}}{%else%}<p style='text-align: center;'>這個頁面為美食加常客頁面，<strong>加入美食加常客一起團購更多美食吧！</strong></p>{%endif%}{%if locksmith_manual_lock%}<p><a href="#" onclick="window.parent.__locksmith_hide_frame(); return false;">&lsaquo; Back</a></p>{%endif%}{%elsif locksmith_requires_customer%}{{locksmith_guest_content}}{%else%}{%if _lock_access_denied_content != blank%}{{_lock_access_denied_content}}{%else%}<p style='text-align: center;'>這個頁面為美食加常客頁面，<strong>加入美食加常客一起團購更多美食吧！</strong></p>{%endif%}{%endif%}{%if _p.name contains "Debut"%}<style>
             /* fix for Debut+Gempages, per Gempages technical support */
             html.gemapp.video {
               display: block;
