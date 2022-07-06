@@ -4,7 +4,7 @@
 
 {% if section.blocks != blank %}
   <div class='carousel' data-carousel-interval='{{ section.settings.carousel-interval }}'>
-    <button class='carousel-button prev'>
+    <button class='carousel-button prev' aria-label='上一頁幻燈片'>
       <svg
         xmlns='http://www.w3.org/2000/svg'
         width='192'
@@ -15,7 +15,7 @@
         <rect width="256" height="256" fill="none"></rect><polyline points="160 208 80 128 160 48" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
       </svg>
     </button>
-    <button class='carousel-button next'>
+    <button class='carousel-button next' aria-label='下一頁幻燈片'>
       <svg
         xmlns='http://www.w3.org/2000/svg'
         width='192'

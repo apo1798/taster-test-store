@@ -7,12 +7,7 @@
       <p class='custom-color'>{{ section.settings.card_text }}</p>
     </div>
 
-    <ul class='
-        product-card-container
-        {% if section.settings.show_divider %}
-            product-card-divider
-         {% endif %}
-      '>
+    <ul class='product-card-container{% if section.settings.show_divider %} product-card-divider {% endif %}'>
       {% for block in section.blocks %}
         {% case block.type %}
           {% when 'product_card' %}
@@ -59,6 +54,14 @@
                 </div>
               </li>
             {% endunless %}
+            
+            {% when 'product_description' %}
+              {% unless block.settings.product != blank %}
+                <li class='product-description'>
+                  {{ block.settings.description }}
+                </li>
+              {% endunless %}
+
         {% endcase %}
       {% endfor %}
     </ul>
@@ -101,6 +104,18 @@
           "id": "product",
           "type": "product",
           "label": "選擇商品"
+        }
+      ]
+    },
+    {
+      "name": "文字段落",
+      "type": "product_description",
+      "settings": [
+        {
+          "id": "description",
+          "type": "richtext",
+          "label": "文字段落",
+          "default": "<p>請輸入一段文字......</p>"
         }
       ]
     }
