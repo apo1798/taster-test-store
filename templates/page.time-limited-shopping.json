@@ -23,10 +23,52 @@
           "settings": {
             "product": "和牛研究室-經典暢銷含運組_0629"
           }
+        },
+        "935018a2-23c8-4e3d-ab59-9a4b3b0e8f5f": {
+          "type": "product_description",
+          "settings": {
+            "description": "<p><strong>\/ 限量單品方案 \/<\/strong><\/p><p>▪️和牛牛肉湯系列<br\/>匈牙利蔬菜牛肉湯／法式牛肉澄清湯／馬告風味牛白湯<br\/>▪️和牛料理包系列<br\/>和牛日式燴飯醬汁／和牛瑪莎拉咖哩／紅酒燉近江牛<\/p>"
+          }
+        },
+        "16874080-1532-451b-8c85-a430127987af": {
+          "type": "product_card",
+          "settings": {
+            "product": "gubami咖喱和牛香香麵"
+          }
+        },
+        "45aa4bd0-295c-4f04-b783-3931ea0cbb1d": {
+          "type": "product_card",
+          "settings": {
+            "product": "gubami法式上湯和牛腩麵"
+          }
+        },
+        "1c1aa007-084a-4e83-829a-006c4459feab": {
+          "type": "product_card",
+          "settings": {
+            "product": "gubami紅燒豆包"
+          }
+        },
+        "48af41c8-ba81-4b74-b2f3-4992bd7f37be": {
+          "type": "product_card",
+          "settings": {
+            "product": "gubami美食加雙人分享組合包"
+          }
+        },
+        "77e0c11a-77b4-4378-988c-d9c0a77df7ef": {
+          "type": "product_card",
+          "settings": {
+            "product": "gubami香辣雪耳牛肉"
+          }
         }
       },
       "block_order": [
-        "074007c0-63ff-4c38-9403-7015a42082af"
+        "074007c0-63ff-4c38-9403-7015a42082af",
+        "935018a2-23c8-4e3d-ab59-9a4b3b0e8f5f",
+        "16874080-1532-451b-8c85-a430127987af",
+        "45aa4bd0-295c-4f04-b783-3931ea0cbb1d",
+        "1c1aa007-084a-4e83-829a-006c4459feab",
+        "48af41c8-ba81-4b74-b2f3-4992bd7f37be",
+        "77e0c11a-77b4-4378-988c-d9c0a77df7ef"
       ],
       "settings": {
         "card_title": "",
@@ -42,10 +84,17 @@
           "settings": {
             "product": "和牛研究室_限量單品自由選_0629"
           }
+        },
+        "567587c6-1d05-4abc-8967-fe280e8ca3d9": {
+          "type": "product_card",
+          "settings": {
+            "product": "gubami紅燒豆包"
+          }
         }
       },
       "block_order": [
-        "1d91a2a0-3f1a-42c6-a58d-af6721664ba2"
+        "1d91a2a0-3f1a-42c6-a58d-af6721664ba2",
+        "567587c6-1d05-4abc-8967-fe280e8ca3d9"
       ],
       "settings": {
         "card_title": "",

@@ -13,7 +13,7 @@
           {% when 'product_card' %}
             {% unless block.settings.product == blank %}
               {% assign image = block.settings.product.images[0] %}
-              <li class='product-card'>
+              <li class='product-card {% if block.settings.product.available == false %} sold-out {% endif %}'>
                 <div class='product-image-container'>
                   <a
                     href='{{ block.settings.product.url }}'
@@ -21,6 +21,7 @@
                     rel='noopenner noreferrer'
                   >
                     <img
+              
                       srcset='
                         {%- if image.width >= 165 -%}{{ image | image_url: width: 165 }} 165w,{%- endif -%}
                         {%- if image.width >= 360 -%}{{ image | image_url: width: 360 }} 360w,{%- endif -%}
@@ -36,7 +37,11 @@
                       width='{{ image.width }}'
                       height='{{ image.width | divided_by: image.aspect_ratio | round }}'
                     >
-                    <div class='product-choose'>選擇品項</div>
+                      {% if block.settings.product.available %}
+                          <div class='product-choose'>選擇品項</div>
+                      {% else %}
+                          <div class='product-choose sold-out'>售完</div>
+                      {% endif %}
                   </a>
                 </div>
 
