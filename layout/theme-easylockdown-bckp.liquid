@@ -1,11 +1,6 @@
-{%- comment %}<locksmith:b909>{% endcomment -%}
-  {%- include 'locksmith' -%}
-{%- comment %}</locksmith:b909>{% endcomment -%}
-
 <!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}">
   <head>
-{{ locksmith_initializations }}
 {% comment %}EasylockdownHeadBegin{% endcomment %}{% capture elhRender %}{% render 'easylockdown_head', easylockdownRender: true, easylockdownCustomPriceSelector: easylockdownCustomPriceSelector %}{% endcapture %}{% assign elhRender = elhRender | split: '--elhResults--'%}{{ elhRender[0] }}{% comment %}EasylockdownHeadEnd{% endcomment %}
 
     <meta charset="utf-8">
@@ -31,10 +26,7 @@
     </title>
 
     {% if page_description %}
-      {%- comment %}<locksmith:0be3>{% endcomment -%}
-        {%- capture var %}{% render 'locksmith-variables', variable: 'transparent', hiding_scope: 'resource' %}{% endcapture %}{% if var == 'true' %}<meta name="description" content="{{ page_description | escape }}">{% endif -%}
-        {%- comment %}original: <meta name="description" content="{{ page_description | escape }}">{%- endcomment %}
-      {%- comment %}</locksmith:0be3>{% endcomment -%}
+      <meta name="description" content="{{ page_description | escape }}">
     {% endif %}
 
     {% render 'meta-tags' %}
@@ -240,7 +232,7 @@
     {% section 'announcement-bar' %}
     {% section 'header' %}
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
-      {% comment %}{{ content_for_layout }}{{ locksmith_content_for_layout_addenda }}{% endcomment %}{% render 'easylockdown_body', content_for_layout: content_for_layout, elhDefines: elhRender[1] %}
+      {% comment %}{{ content_for_layout }}{% endcomment %}{% render 'easylockdown_body', content_for_layout: content_for_layout, elhDefines: elhRender[1] %}
     </main>
 
     {% section 'footer' %}
