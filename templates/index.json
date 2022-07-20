@@ -58,6 +58,16 @@
         "carousel-interval": 5
       }
     },
+    "1658297943f6169348": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "multicolumn": {
       "type": "multicolumn",
       "blocks": {
@@ -287,6 +297,7 @@
   },
   "order": [
     "1656984756154bc601",
+    "1658297943f6169348",
     "multicolumn",
     "featured_collection",
     "image_banner",
